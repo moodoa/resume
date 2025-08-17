@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Fade-in animation observer
     const sections = document.querySelectorAll('.resume-section');
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // LeetCode Chart
     const ctx = document.getElementById('leetCodeChart');
     if (ctx) {
         new Chart(ctx, {
@@ -64,26 +62,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Typewriter Effect
     const textElement = document.getElementById('typewriter-text');
     const cursorElement = document.querySelector('.cursor');
     const textToType = "Python Backend Engineer";
     let index = 0;
 
     if (textElement && cursorElement) {
-        textElement.textContent = ''; // Clear initial text
+        textElement.textContent = ''; 
         cursorElement.style.display = 'inline-block';
 
         function type() {
             if (index < textToType.length) {
                 textElement.textContent += textToType.charAt(index);
                 index++;
-                setTimeout(type, 120); // Typing speed
+                setTimeout(type, 120); 
             } else {
-                cursorElement.style.animation = 'none'; // Stop blinking
+                cursorElement.style.animation = 'none'; 
                 cursorElement.style.opacity = 1;
             }
         }
-        setTimeout(type, 500); // Start after a short delay
+        setTimeout(type, 500); 
     }
 });
