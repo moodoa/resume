@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const textElement = document.getElementById('typewriter-text');
     const cursorElement = document.querySelector('.cursor');
-    const textToType = "Python Backend Engineer";
+    const textToType = "Python Backend Developer";
     let index = 0;
 
     if (textElement && cursorElement) {
