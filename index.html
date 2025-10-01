@@ -3,17 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEIYI SU - Python Backend Developer</title>
+    <title>WEIYI SU - Python Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container shadow-sm p-4 mb-5 bg-white rounded">
+    <div id="resume-zh" class="container shadow-sm p-4 mb-5 bg-white rounded">
+        <div class="resume-header rounded">
+            <h1>蘇煒益</h1>
+            <p class="lead" id="typewriter-container-zh"><span id="typewriter-text-zh"></span><span class="cursor"></span></p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="resume-section contact-info">
+                    <h2 class="section-title">聯絡方式</h2>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:aa469413927@gmail.com">aa469413927@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> +886-912-918-536</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/weiyi-su-b45477138" target="_blank">linkedin.com/in/weiyi-su</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/moodoa" target="_blank">github.com/moodoa</a></p>
+                </div>
+                <div class="resume-section">
+                    <h2 class="section-title">專業技能</h2>
+                    <h6>後端及 API 開發</h6>
+                    <p>Python, FastAPI, Django, RESTful API, WebSocket</p>
+                    <h6>測試與自動化</h6>
+                    <p>Pytest, Locust, Selenium, Airflow, ADB, 自動化腳本</p>
+                    <h6>資料庫</h6>
+                    <p>MySQL, PostgreSQL, Redis</p>
+                    <h6>資料處理</h6>
+                    <p>Pandas, NumPy, ETL Pipelines</p>
+                    <h6>環境與工具</h6>
+                    <p>Linux, macOS, Git, Docker, CI/CD</p>
+                </div>
+                 <div class="resume-section">
+                    <h2 class="section-title">語言</h2>
+                    <p><strong>中文</strong> (母語)</p>
+                    <p><strong>英文</strong> (專業)</p>
+                </div>
+                <div class="resume-section">
+                    <h2 class="section-title">學歷</h2>
+                    <p><strong>國立體育大學</strong><br>
+                       管理學學士</p>
+                </div>
+                <div class="resume-section">
+                    <h2 class="section-title">LeetCode</h2>
+                    <p class="text-center"><strong>總解決題數: 1141</strong></p>
+                    <div class="chart-container">
+                        <canvas id="leetCodeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="resume-section">
+                    <h2 class="section-title">個人簡介</h2>
+                    <p>累積超過五年軟體開發與測試經驗，涵蓋前後端、資料處理與自動化測試。擅長 Python 開發（API 設計、自動化工具、壓力測試腳本），熟悉 FastAPI、Locust、Django、Selenium 等框架，以及 Linux/macOS 環境操作與排程監控。</p>
+                </div>
+                <div class="resume-section">
+                    <h2 class="section-title">工作經歷</h2>
+                    <div>
+                        <h5 class="job-title">Python 後端開發工程師 | 台積電</h5>
+                        <p class="job-duration">台灣 新竹 | 2025/07 – 至今</p>
+                        <ul>
+                            <li>負責高流量半導體製造資料平台核心 API 的架構設計與維護 (FastAPI)。</li>
+                            <li>開發製造資料的處理整合平台，以支援複雜的資料查詢。</li>
+                            <li>撰寫單元與整合測試，提升系統穩定性並確保資料完整性。</li>
+                            <li>使用 Git 進行版本控制，協調功能合併並與前端團隊合作進行整合測試。</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="job-title">自動化開發工程師 | 奕界科技</h5>
+                        <p class="job-duration">台灣 台北 | 2024/12 – 2025/05</p>
+                        <ul>
+                            <li>利用非同步與多進程技術，建構基於 Python 的自動化測試框架與後端系統。</li>
+                            <li>開發以 Django 為基礎的測試後台，包含錯誤率儀表板、流程管理與即時日誌監控。</li>
+                            <li>編寫 Locust 負載測試腳本以模擬複雜的多用戶情境，並與 Django 整合以實現自動化執行。</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="job-title">Python 自動化開發人員 | Google (vendor)</h5>
+                        <p class="job-duration">台灣 新北 | 2023/08 – 2023/11</p>
+                        <ul>
+                            <li>開發 Python 自動化腳本，用於自動執行 Google Pixel 裝置的設定。</li>
+                            <li>自動化裝置連接、日誌收集與測試初始化流程，減少手動設置時間。</li>
+                            <li>將 ADB 命令操作與裝置監控腳本整合至內部測試平台。</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="job-title">資料處理與自動化開發人員 | Dcard</h5>
+                        <p class="job-duration">台灣 台北 | 2019/11 – 2022/10</p>
+                        <ul>
+                            <li>開發 Python 網頁爬蟲程式，用以收集 NBA 統計數據、台灣股市資料及社群媒體等即時熱門話題，並自動將分析結果發布至儀表板。</li>
+                            <li>使用 Pandas 與 Selenium 建立自動化 Python 資料流程，並將資料儲存於 MySQL。</li>
+                            <li>設計並部署以 Airflow 排程的工作流程，自動觸發程式發文。</li>
+                            <li>應用 NLP 預處理技術（斷詞、TF-IDF）於情感分析模型。</li>
+                        </ul>
+                    </div>
+
+                     <div class="mt-4">
+                        <h5 class="job-title">網頁設計師 | KKDAY</h5>
+                        <p class="job-duration">台灣 台北 | 2018/08 – 2019/02</p>
+                        <ul>
+                            <li>使用 HTML、CSS 與 jQuery 建構響應式前端網頁。</li>
+                            <li>確保跨瀏覽器相容性並優化 UI 整合流程。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="resume-en" class="container shadow-sm p-4 mb-5 bg-white rounded">
         <div class="resume-header rounded">
             <h1>WEIYI SU</h1>
-            <p class="lead" id="typewriter-container"><span id="typewriter-text"></span><span class="cursor"></span></p>
+            <p class="lead" id="typewriter-container-en"><span id="typewriter-text-en"></span><span class="cursor"></span></p>
         </div>
 
         <div class="row">
@@ -32,7 +138,7 @@
                     <h6>Testing & Automation</h6>
                     <p>Pytest, Locust, Selenium, Airflow, ADB, Automation Scripts</p>
                     <h6>Databases</h6>
-                    <p>MySQL, PostgreSQL, Redis, NoSQL</p>
+                    <p>MySQL, PostgreSQL, Redis</p>
                     <h6>Data Processing</h6>
                     <p>Pandas, NumPy, ETL Pipelines</p>
                     <h6>Environments & Tools</h6>
@@ -50,9 +156,9 @@
                 </div>
                 <div class="resume-section">
                     <h2 class="section-title">LeetCode Profile</h2>
-                    <p class="text-center"><strong>Total Solved: 1124</strong></p>
+                    <p class="text-center"><strong>Total Solved: 1141</strong></p>
                     <div class="chart-container">
-                        <canvas id="leetCodeChart"></canvas>
+                        <canvas id="leetCodeChartEn"></canvas>
                     </div>
                 </div>
             </div>
