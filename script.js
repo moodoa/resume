@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         labels: ['Easy', 'Medium', 'Hard'],
         datasets: [{
             label: 'Problems Solved',
-            data: [703, 420, 18],
+            data: [738, 449, 19],
             backgroundColor: [
                 'rgba(40, 167, 69, 0.7)',
                 'rgba(255, 193, 7, 0.7)',
